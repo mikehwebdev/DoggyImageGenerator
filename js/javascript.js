@@ -164,7 +164,7 @@ fetch (`https://dog.ceo/api/breed/${breedData}/images/random/3`)
 <img class="dog-pics"  src="${data.message[2]}">
 `}
 
-}
+
 )
 
 imgsTransition()
