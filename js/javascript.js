@@ -147,7 +147,7 @@ function breedSearch(){
 }
 
 function searchResultFetch(breedData) {
-    
+    console.log(dogArray)
     
 fetch (`https://dog.ceo/api/breed/${breedData}/images/random/3`)
 .then (res => res.json())
