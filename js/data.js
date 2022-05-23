@@ -1,4 +1,4 @@
-const dogArray = [{
+export const dogArray = [{
     apiSearchName:"affenpinscher",
     actualName:"Affenpinscher"
 },
