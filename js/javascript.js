@@ -152,12 +152,17 @@ function searchResultFetch(breedData) {
 fetch (`https://dog.ceo/api/breed/${breedData}/images/random/3`)
 .then (res => res.json())
 .then (data => {
-    data.message[0] ? imagesEl.innerHTML +=
-    `<img class="dog-pics" src="${data.message[0]}">` : `<img class="dog-pics" src="https://images.unsplash.com/photo-1423958950820-4f2f1f44e075?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170">` 
-    data.message[1] ? imagesEl.innerHTML +=
-    `<img class="dog-pics" src="${data.message[1]}">` : imagesEl.innerHTML += `<img class="dog-pics" src="https://images.unsplash.com/photo-1423958950820-4f2f1f44e075?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170">` 
-    data.message[2] ? imagesEl.innerHTML +=
-    `<img class="dog-pics" src="${data.message[2]}">` : imagesEl.innerHTML +=`<img class="dog-pics" src="https://images.unsplash.com/photo-1423958950820-4f2f1f44e075?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170">` 
+    // data.message[0] ? imagesEl.innerHTML +=
+    // `<img class="dog-pics" src="${data.message[0]}">` : `<img class="dog-pics" src="https://images.unsplash.com/photo-1423958950820-4f2f1f44e075?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170">` 
+    // data.message[1] ? imagesEl.innerHTML +=
+    // `<img class="dog-pics" src="${data.message[1]}">` : imagesEl.innerHTML += `<img class="dog-pics" src="https://images.unsplash.com/photo-1423958950820-4f2f1f44e075?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170">` 
+    // data.message[2] ? imagesEl.innerHTML +=
+    // `<img class="dog-pics" src="${data.message[2]}">` : imagesEl.innerHTML +=`<img class="dog-pics" src="https://images.unsplash.com/photo-1423958950820-4f2f1f44e075?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170">` 
+    imagesEl.innerHTML =`
+<img class="dog-pics" src="${data.message[0]}">
+<img class="dog-pics"  src="${data.message[1]}">
+<img class="dog-pics"  src="${data.message[2]}">
+`}
 
 }
 )
