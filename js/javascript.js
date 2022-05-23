@@ -1,4 +1,4 @@
-import { dogArray } from "https://www.mikehatton.net/js/data"
+import { dogArray } from "./data.js"
 
 
 
