@@ -144,7 +144,7 @@ function breedSearch(){
     for (let i = 0; i<searchResult.length; i++)
     {
         searchResultsEl.innerHTML +=`
-        <a onClick="searchResultFetch('${searchResult[i].apiSearchName}')" href="#">${searchResult[i].actualName}</a>
+        <a onClick="searchResultFetch('${searchResult[i].apiSearchName}')" href="">${searchResult[i].actualName}</a>
         ` 
     }
 }
