@@ -1,0 +1,21 @@
+.container {
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+
+a {
+    margin-left: 25px;
+}
+
+a:last-child{
+    margin-left: auto;
+}
