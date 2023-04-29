@@ -1,16 +1,19 @@
-.container {
-    display: grid;
-    height: 100vh;
-    place-items: center;
-    
+* {
+    box-sizing: border-box;
+    margin: 0;
 }
 
-.nav {
+.container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    width: 90%;
+    align-items: center;
 }
+
+header {
+    background-color: bisque;
+}
+
 
 a {
     margin-left: 25px;
@@ -18,4 +21,11 @@ a {
 
 a:last-child{
     margin-left: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: aquamarine;
 }

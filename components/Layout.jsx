@@ -6,9 +6,7 @@ export default function Home(){
     return (
         <div className="container">
             <Header/>
-            <main>
-                <Outlet/>
-            </main>
+            <Outlet/>
             <Footer/>
         </div>
     )
