@@ -7,22 +7,27 @@ const headers = {
 }
 
 export async function getRandomDogs(){
-        
-        const url = `https://api.thedogapi.com/v1/images/search?size=full&has_breeds=1&${apiKey}`
-            const response = await fetch(url, headers)
-            const data = await response.json()
-            
-            const dogData = {...data[0].breeds[0],url:data[0].url}
-            return dogData
+    const url = `https://api.thedogapi.com/v1/images/search?size=full&has_breeds=1&${apiKey}`
+    const response = await fetch(url, headers)
+    const data = await response.json()
+    const dogData = {...data[0].breeds[0],url:data[0].url}
+    return dogData
 }
 
-export async function getDoggyBreed(id){
-//figure out how to search by breed
-
+export async function getDoggyBreed(){
     const url = `https://api.thedogapi.com/v1/breeds/`
     const response = await fetch(url, headers)
     const data = await response.json()
-    const dogData = {...data[id],url:data[id].image.url}
-   console.log (dogData)
-   return dogData
+    return data
+    
 }
+
+export async function getDogList(){
+    const url = `https://api.thedogapi.com/v1/breeds?limit=200`
+    const response = await fetch(url, headers)
+    const data = await response.json()
+    return data
+}
+    
+
+    

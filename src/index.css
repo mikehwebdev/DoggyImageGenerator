@@ -15,11 +15,11 @@ header {
 }
 
 
-a {
+nav a {
     margin-left: 25px;
 }
 
-a:last-child{
+nav a:last-child{
     margin-left: auto;
 }
 
@@ -28,4 +28,8 @@ footer {
     justify-content: center;
     width: 100%;
     background-color: aquamarine;
+}
+.search-results-container {
+    display: flex;
+    flex-direction: column;
 }
